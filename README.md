@@ -1,1 +1,1 @@
-# java
+# Basic java journey
