@@ -1,8 +1,9 @@
 package group.sms;
 
+import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
-import java.awt.event.ActionEvent;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -31,22 +32,22 @@ public class AdController
     @javafx.fxml.FXML
     private TableView<advertisement> advTable;
     @javafx.fxml.FXML
-    private TableColumn charityTableColumn;
+    private TableColumn<advertisement, Boolean> charityTableColumn;
     @javafx.fxml.FXML
-    private TableColumn vatTableColumn;
+    private TableColumn<advertisement, Float> vatTableColumn;
     @javafx.fxml.FXML
-    private TableColumn advidTableColumn;
+    private TableColumn<advertisement, Integer> advidTableColumn;
     @javafx.fxml.FXML
     private DatePicker datePickerField;
     @javafx.fxml.FXML
     private TextField advIDTextField;
     @javafx.fxml.FXML
-    private ComboBox searchAdvType;
+    private ComboBox<String> searchAdvType;
     @javafx.fxml.FXML
     private CheckBox charityCheckBox;
 
 
-    ArrayList<advertisement> advList = new ArrayList<advertisement>()
+    ArrayList<advertisement> advList = new ArrayList<advertisement>();
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -54,20 +55,36 @@ public class AdController
 
     @javafx.fxml.FXML
     public void addNewAdButton(ActionEvent actionEvent) {
+        advList.add(
+                new advertisement(
+        //int advId, int clientId, String advType, float billAmount,
+        //float vatPercentage, boolean isForCharity, LocalDate deliveryDate
+                        Integer.parseInt(advIDTextField.getText()),
+                        Integer.parseInt(clienIDTextField.getText()),
+                        adTypefield.getValue(),
+                        Integer.parseInt(billidTextField.getText()),
+                        Float.parseFloat(VatidTextField.getText()),
+                        charityCheckBox.isSelected(),
+                        LocalDate.now()
+                )
+
+        );
+
+        System.out.println("add new button pressed");
+
     }
 
-    advList.add(
-            new advertisement(Integer.parseInt(advIDTextField.getText()),adTypefield.getValue())
-            )
+
     @javafx.fxml.FXML
     public void FilterLoadAdButton(ActionEvent actionEvent) {
+        for  (advertisement adv : advList) {
+            System.out.println(adv.toString());
+        }
+
+        System.out.println("Filter Load Button pressed");
     }
 
     @javafx.fxml.FXML
     public void charityAddButton(ActionEvent actionEvent) {
-    }
-
-    public ComboBox getSearchAdvType() {
-        return searchAdvType;
     }
 }
