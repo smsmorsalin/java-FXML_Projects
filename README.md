@@ -53,5 +53,6 @@ The goal of this repository is to:
 - IntelliJ IDEA / NetBeans
 - Scene Builder (for FXML projects)
 
+### Clone the Repository
 ```bash
 git clone https://github.com/smsmorsalin/java.git
