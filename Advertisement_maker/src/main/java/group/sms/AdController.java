@@ -100,12 +100,11 @@ public class AdController
     public void FilterLoadAdButton(ActionEvent actionEvent) {
         advTable.getItems().clear();
         for  (advertisement ad : advList) {
-            if ( (Integer.parseInt(searchClientid.getText()) == ad.getAdvId()) && searchAdvType.getValue().equals(ad.getAdvType())) {
+            if ( (Integer.parseInt(searchClientid.getText()) == ad.getClientId()) && searchAdvType.getValue().equals(ad.getAdvType())) {
             advTable.getItems().add(ad);
             }
 
-
-            System.out.println(ad.toString());
+//            System.out.println(ad.toString());
         }
 
         System.out.println("Filter Load Button pressed");

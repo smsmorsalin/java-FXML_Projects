@@ -12,29 +12,29 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="713.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group.sms.AdController">
+<AnchorPane prefHeight="574.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group.sms.AdController">
    <children>
-      <TextField fx:id="advIDTextField" layoutX="116.0" layoutY="36.0" />
-      <Label layoutX="41.0" layoutY="40.0" text="Enter advID:" />
-      <TextField fx:id="clienIDTextField" layoutX="407.0" layoutY="32.0" />
-      <Label layoutX="317.0" layoutY="34.0" text="Enter advClient:" />
-      <ComboBox fx:id="adTypefield" layoutX="116.0" layoutY="97.0" prefWidth="150.0" />
-      <Label layoutX="59.0" layoutY="101.0" text="Type:" />
-      <TextField fx:id="VatidTextField" layoutX="407.0" layoutY="89.0" />
-      <Label layoutX="332.0" layoutY="93.0" text="Enter vat%:" />
-      <TextField fx:id="billidTextField" layoutX="407.0" layoutY="139.0" />
-      <Label layoutX="332.0" layoutY="143.0" prefHeight="17.0" prefWidth="60.0" text="Enter bill:" />
-      <DatePicker fx:id="datePickerField" layoutX="109.0" layoutY="148.0" />
-      <Label layoutX="62.0" layoutY="152.0" text="Date:" />
-      <CheckBox fx:id="charityCheckBox" layoutX="59.0" layoutY="200.0" mnemonicParsing="false" text="is for charity?" />
-      <Button layoutX="237.0" layoutY="231.0" mnemonicParsing="false" onAction="#addNewAdButton" text="add new Ad" />
-      <Line endX="492.0" layoutX="106.0" layoutY="287.0" startX="-104.0" />
-      <TextField fx:id="searchClientid" layoutX="126.0" layoutY="316.0" prefHeight="25.0" prefWidth="92.0" />
-      <Label layoutX="45.0" layoutY="320.0" text="enter clientID:" />
-      <ComboBox fx:id="searchAdvType" layoutX="437.0" layoutY="308.0" prefHeight="25.0" prefWidth="119.0" />
-      <Label layoutX="383.0" layoutY="312.0" text="adtype" />
-      <Button layoutX="125.0" layoutY="357.0" mnemonicParsing="false" onAction="#FilterLoadAdButton" prefHeight="25.0" prefWidth="307.0" text="filter &amp; load Table" />
-      <TableView fx:id="advTable" layoutX="19.0" layoutY="397.0" prefHeight="275.0" prefWidth="572.0">
+      <TextField fx:id="advIDTextField" layoutX="116.0" layoutY="20.0" />
+      <Label layoutX="41.0" layoutY="24.0" text="Enter advID:" />
+      <TextField fx:id="clienIDTextField" layoutX="407.0" layoutY="16.0" />
+      <Label layoutX="317.0" layoutY="18.0" text="Enter advClient:" />
+      <ComboBox fx:id="adTypefield" layoutX="116.0" layoutY="66.0" prefWidth="150.0" />
+      <Label layoutX="59.0" layoutY="70.0" text="Type:" />
+      <TextField fx:id="VatidTextField" layoutX="407.0" layoutY="58.0" />
+      <Label layoutX="332.0" layoutY="62.0" text="Enter vat%:" />
+      <TextField fx:id="billidTextField" layoutX="407.0" layoutY="105.0" />
+      <Label layoutX="332.0" layoutY="109.0" prefHeight="17.0" prefWidth="60.0" text="Enter bill:" />
+      <DatePicker fx:id="datePickerField" layoutX="109.0" layoutY="114.0" />
+      <Label layoutX="62.0" layoutY="118.0" text="Date:" />
+      <CheckBox fx:id="charityCheckBox" layoutX="59.0" layoutY="161.0" mnemonicParsing="false" text="is for charity?" />
+      <Button layoutX="237.0" layoutY="176.0" mnemonicParsing="false" onAction="#addNewAdButton" text="add new Ad" />
+      <Line endX="492.0" layoutX="106.0" layoutY="212.0" startX="-104.0" />
+      <TextField fx:id="searchClientid" layoutX="126.0" layoutY="239.0" prefHeight="25.0" prefWidth="92.0" />
+      <Label layoutX="45.0" layoutY="243.0" text="enter clientID:" />
+      <ComboBox fx:id="searchAdvType" layoutX="437.0" layoutY="231.0" prefHeight="25.0" prefWidth="119.0" />
+      <Label layoutX="383.0" layoutY="235.0" text="adtype" />
+      <Button layoutX="125.0" layoutY="280.0" mnemonicParsing="false" onAction="#FilterLoadAdButton" prefHeight="25.0" prefWidth="307.0" text="filter &amp; load Table" />
+      <TableView fx:id="advTable" layoutX="19.0" layoutY="320.0" prefHeight="195.0" prefWidth="572.0">
         <columns>
           <TableColumn fx:id="advidTableColumn" prefWidth="75.0" text="adv ID" />
           <TableColumn fx:id="clientidTableColumn" prefWidth="99.0" text="Client ID" />
@@ -44,8 +44,8 @@
             <TableColumn fx:id="billTableColumn" prefWidth="112.0" text="bill" />
         </columns>
       </TableView>
-      <Button layoutX="37.0" layoutY="678.0" mnemonicParsing="false" onAction="#charityAddButton" prefHeight="25.0" prefWidth="161.0" text="show add for charity only " />
-      <Label fx:id="charityCountLabel" layoutX="332.0" layoutY="682.0" prefHeight="17.0" prefWidth="198.0" style="-fx-background-color: yellow;" text="Count for charity: ">
+      <Button layoutX="28.0" layoutY="531.0" mnemonicParsing="false" onAction="#charityAddButton" prefHeight="25.0" prefWidth="161.0" text="show add for charity only " />
+      <Label fx:id="charityCountLabel" layoutX="321.0" layoutY="535.0" prefHeight="17.0" prefWidth="198.0" style="-fx-background-color: yellow;" text="Count for charity: ">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Label>
