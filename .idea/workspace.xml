@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2eb9dfcb-76b7-48ac-9554-d151e527e030" name="Changes" comment="" />
+    <list default="true" id="2eb9dfcb-76b7-48ac-9554-d151e527e030" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,23 +17,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000261897387994" />
-      <entry key="MS500" value="1.2129090120447885" />
-      <entry key="S2" value="3.7159114665031203" />
-      <entry key="S5" value="9.384099117162627" />
-      <entry key="S10" value="18.829551048586158" />
-      <entry key="S30" value="53.03173017633218" />
-      <entry key="S60" value="82.77893980020457" />
-      <entry key="M2" value="107.41564851238202" />
-      <entry key="M5" value="127.14703364797707" />
-      <entry key="M10" value="134.772874817691" />
-      <entry key="M15" value="137.44593775512138" />
-      <entry key="M30" value="140.18766373682737" />
-      <entry key="H1" value="141.58488161350573" />
-      <entry key="H2" value="142.29018754501413" />
-      <entry key="H4" value="142.64452848206142" />
-      <entry key="D1" value="142.94067606621965" />
-      <entry key="W1" value="142.99152322324312" />
+      <entry key="MS100" value="1.0030881795850926" />
+      <entry key="MS500" value="1.57464760990857" />
+      <entry key="S2" value="4.3023179303240315" />
+      <entry key="S5" value="7.8459048301489815" />
+      <entry key="S10" value="15.306472470729199" />
+      <entry key="S30" value="48.29430404898181" />
+      <entry key="S60" value="93.99807084691138" />
+      <entry key="M2" value="151.79022034813545" />
+      <entry key="M5" value="214.49019897950785" />
+      <entry key="M10" value="243.1362437555688" />
+      <entry key="M15" value="253.79566834740635" />
+      <entry key="M30" value="265.0703726606582" />
+      <entry key="H1" value="270.95073952938503" />
+      <entry key="H2" value="273.9539259653354" />
+      <entry key="H4" value="275.4715599163566" />
+      <entry key="D1" value="276.74450595702586" />
+      <entry key="W1" value="276.96348233780907" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -50,23 +55,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.014703499447420299" />
-      <entry key="MS500" value="0.5915173003025737" />
-      <entry key="S2" value="3.3495235368867835" />
-      <entry key="S5" value="9.170650761299221" />
-      <entry key="S10" value="18.699830145751395" />
-      <entry key="S30" value="52.96320531934877" />
-      <entry key="S60" value="82.7311727997011" />
-      <entry key="M2" value="107.38550529117002" />
-      <entry key="M5" value="127.13283081694108" />
-      <entry key="M10" value="134.7653440953427" />
-      <entry key="M15" value="137.440815740789" />
-      <entry key="M30" value="140.18505034154452" />
-      <entry key="H1" value="141.58356150600792" />
-      <entry key="H2" value="142.2895240989129" />
-      <entry key="H4" value="142.6441959058868" />
-      <entry key="D1" value="142.94062051793802" />
-      <entry key="W1" value="142.9915152848564" />
+      <entry key="MS100" value="0.021319468718882403" />
+      <entry key="MS500" value="0.8546005813999176" />
+      <entry key="S2" value="3.9418407629920704" />
+      <entry key="S5" value="7.65650416454247" />
+      <entry key="S10" value="15.195048066031124" />
+      <entry key="S30" value="48.24053080329619" />
+      <entry key="S60" value="93.95590016451146" />
+      <entry key="M2" value="151.75767170163655" />
+      <entry key="M5" value="214.47172012459203" />
+      <entry key="M10" value="243.12570005404638" />
+      <entry key="M15" value="253.78831067092963" />
+      <entry key="M30" value="265.0665187154394" />
+      <entry key="H1" value="270.94876662833633" />
+      <entry key="H2" value="273.95292775270946" />
+      <entry key="H4" value="275.47105783380584" />
+      <entry key="D1" value="276.7444218601699" />
+      <entry key="W1" value="276.9634703137343" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -78,23 +83,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/skill document/git/java",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/skill document/git/java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="java" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -112,6 +136,9 @@
       <updated>1781096465219</updated>
       <workItem from="1781096484241" duration="112000" />
       <workItem from="1781099720907" duration="143000" />
+      <workItem from="1781184753353" duration="753000" />
+      <workItem from="1781185805314" duration="369000" />
+      <workItem from="1781528602473" duration="45000" />
     </task>
     <servers />
   </component>

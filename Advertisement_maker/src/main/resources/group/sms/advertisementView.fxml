@@ -37,16 +37,15 @@
       <TableView fx:id="advTable" layoutX="19.0" layoutY="397.0" prefHeight="275.0" prefWidth="572.0">
         <columns>
           <TableColumn fx:id="advidTableColumn" prefWidth="75.0" text="adv ID" />
-          <TableColumn fx:id="clientidTableColumn" prefWidth="75.0" text="Client ID" />
-            <TableColumn fx:id="advtypeTableColumn" prefWidth="75.0" text="ad Type" />
-            <TableColumn fx:id="vatTableColumn" prefWidth="75.0" text="Vat" />
-            <TableColumn fx:id="dateTableColumn" prefWidth="75.0" text="Date" />
-            <TableColumn fx:id="billTableColumn" prefWidth="75.0" text="bill" />
-            <TableColumn fx:id="charityTableColumn" prefWidth="121.0" text="is For charity" />
+          <TableColumn fx:id="clientidTableColumn" prefWidth="99.0" text="Client ID" />
+            <TableColumn fx:id="advtypeTableColumn" prefWidth="87.0" text="ad Type" />
+            <TableColumn fx:id="vatTableColumn" prefWidth="83.0" text="Vat" />
+            <TableColumn fx:id="dateTableColumn" prefWidth="115.0" text="Date" />
+            <TableColumn fx:id="billTableColumn" prefWidth="112.0" text="bill" />
         </columns>
       </TableView>
       <Button layoutX="37.0" layoutY="678.0" mnemonicParsing="false" onAction="#charityAddButton" prefHeight="25.0" prefWidth="161.0" text="show add for charity only " />
-      <Label fx:id="charityCountLabel" layoutX="332.0" layoutY="682.0" prefHeight="17.0" prefWidth="198.0" style="-fx-background-color: yellow;" text="add count for charity: ">
+      <Label fx:id="charityCountLabel" layoutX="332.0" layoutY="682.0" prefHeight="17.0" prefWidth="198.0" style="-fx-background-color: yellow;" text="Count for charity: ">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Label>
