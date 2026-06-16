@@ -69,6 +69,17 @@ public class AdController
 
     @javafx.fxml.FXML
     public void addNewAdButton(ActionEvent actionEvent) {
+
+//        Validation:
+        if( advIDTextField.getText().isEmpty() || clienIDTextField.getText().isEmpty() || VatidTextField.getText().isEmpty() || billidTextField.getText().isEmpty() || adTypefield.getValue() == null) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Error");
+            alert.setHeaderText(null);
+            alert.setContentText("Please fill all the fields");
+            alert.showAndWait();
+            return;
+        }
+
         advList.add(
                 new advertisement(
         //int advId, int clientId, String advType, float billAmount,
