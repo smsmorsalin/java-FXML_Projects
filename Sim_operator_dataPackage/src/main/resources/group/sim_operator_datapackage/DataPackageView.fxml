@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="447.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group.sim_operator_datapackage.DataPackageController">
+   <children>
+      <TextField fx:id="fxid_PackageNameField" layoutX="102.0" layoutY="27.0" prefHeight="25.0" prefWidth="103.0" />
+      <Label layoutX="14.0" layoutY="31.0" text="Package Name" />
+      <TextField fx:id="fxid_DataAmountField" layoutX="447.0" layoutY="27.0" prefHeight="25.0" prefWidth="103.0" />
+      <Label layoutX="359.0" layoutY="31.0" prefHeight="17.0" prefWidth="79.0" text="Data Amount" />
+      <Label layoutX="39.0" layoutY="68.0" text="Validity" />
+      <ComboBox fx:id="fxid_ValidityComboBox" layoutX="102.0" layoutY="64.0" prefHeight="25.0" prefWidth="103.0" />
+      <Label layoutX="351.0" layoutY="68.0" text="Price Availability" />
+      <ComboBox fx:id="fxid_PriceAvailabilityComboBox" layoutX="447.0" layoutY="64.0" prefHeight="25.0" prefWidth="103.0" />
+      <Button layoutX="248.0" layoutY="143.0" mnemonicParsing="false" onAction="#CreatePackageButton" text="Create Package" />
+      <Line endX="485.0" layoutX="109.0" layoutY="184.0" startX="-100.0" />
+      <Label fx:id="Fxid_MessageDisplay" alignment="CENTER" contentDisplay="CENTER" layoutX="227.0" layoutY="102.0" prefHeight="17.0" prefWidth="265.0" textAlignment="CENTER" />
+      <ComboBox fx:id="fxid_FilterValidityComboBox" layoutX="67.0" layoutY="194.0" prefHeight="25.0" prefWidth="103.0" />
+      <Label layoutX="19.0" layoutY="198.0" text="Validity" />
+      <Label layoutX="213.0" layoutY="198.0" text="Price" />
+      <Button layoutX="371.0" layoutY="194.0" mnemonicParsing="false" onAction="#FilterButton" prefHeight="25.0" prefWidth="87.0" text="Filter" />
+      <Button layoutX="481.0" layoutY="194.0" mnemonicParsing="false" onAction="#RestButton" prefHeight="25.0" prefWidth="87.0" text="Rest" />
+      <TableView fx:id="Fxid_TableView" layoutX="2.0" layoutY="230.0" prefHeight="167.0" prefWidth="592.0">
+        <columns>
+          <TableColumn fx:id="fxid_TableColPackageName" prefWidth="107.0" text="Package Name" />
+          <TableColumn fx:id="Fxid_TableColDataAmount" prefWidth="190.0" text="Data Amount" />
+            <TableColumn fx:id="Fxid_tableColValidity" prefWidth="132.0" text="Validity" />
+            <TableColumn fx:id="Fxid_TableColPrice" prefWidth="162.0" text="Price" />
+        </columns>
+      </TableView>
+      <TextField fx:id="fxid_FilterPrice" layoutX="243.0" layoutY="194.0" prefHeight="25.0" prefWidth="103.0" />
+      <Button layoutX="21.0" layoutY="407.0" mnemonicParsing="false" onAction="#FindBestValuePackageButton" prefHeight="25.0" prefWidth="154.0" text="Find Best Value Package" />
+      <Label fx:id="Fxid_BestPackageLabel" layoutX="302.0" layoutY="411.0" prefHeight="17.0" prefWidth="249.0" text="Best Package Name:" />
+      <TextField fx:id="fxid_PackageNamePrice" layoutX="102.0" layoutY="98.0" prefHeight="25.0" prefWidth="103.0" />
+      <Label layoutX="39.0" layoutY="102.0" prefHeight="17.0" prefWidth="40.0" text="Price" />
+   </children>
+</AnchorPane>
