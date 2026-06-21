@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+
+<AnchorPane prefHeight="583.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.credit_card_system.CreditCardController">
+   <children>
+      <Label layoutX="20.0" layoutY="30.0" prefHeight="18.0" prefWidth="52.0" text="Card No" />
+      <TextField fx:id="fxid_fieldCardNo" layoutX="72.0" layoutY="27.0" prefHeight="26.0" prefWidth="148.0" />
+      <Label layoutX="322.0" layoutY="31.0" prefHeight="18.0" prefWidth="76.0" text="Holder Name" />
+      <TextField fx:id="fxid_fieldHolderName" layoutX="404.0" layoutY="27.0" prefHeight="26.0" prefWidth="148.0" />
+      <Label layoutX="20.0" layoutY="76.0" prefHeight="18.0" prefWidth="83.0" text="Date Of Expire" />
+      <DatePicker fx:id="fxid_fieldDateOfExpire" layoutX="100.0" layoutY="73.0" prefHeight="26.0" prefWidth="124.0" />
+      <Label layoutX="306.0" layoutY="76.0" prefHeight="18.0" prefWidth="90.0" text="Gateway Name" />
+      <Label layoutX="23.0" layoutY="124.0" prefHeight="18.0" prefWidth="76.0" text="Credit Limit" />
+      <TextField fx:id="fxid_fieldCreditLimit" layoutX="99.0" layoutY="120.0" prefHeight="26.0" prefWidth="124.0" />
+      <Label layoutX="322.0" layoutY="124.0" prefHeight="18.0" prefWidth="76.0" text="Card Type" />
+      <ComboBox fx:id="fxid_fieldCardType" layoutX="403.0" layoutY="121.0" prefWidth="150.0" />
+      <ComboBox fx:id="fxid_fieldGatewayName" layoutX="403.0" layoutY="73.0" prefWidth="150.0" />
+      <Button layoutX="161.0" layoutY="183.0" mnemonicParsing="false" onAction="#validateAndNewCardButtonOnClick" prefHeight="26.0" prefWidth="246.0" text="“Validate &amp; Add New Card to ArrayList”" />
+      <Line endX="477.800048828125" layoutX="115.0" layoutY="240.0" startX="-100.0" />
+      <Label layoutX="22.0" layoutY="254.0" prefHeight="18.0" prefWidth="83.0" text="Gateway Name" />
+      <ComboBox fx:id="fxid_searchGatewayName" layoutX="111.0" layoutY="251.0" prefHeight="26.0" prefWidth="90.0" />
+      <Label layoutX="240.0" layoutY="255.0" prefHeight="18.0" prefWidth="76.0" text="Credit Limit" />
+      <TextField fx:id="fxid_searchCreditLimit" layoutX="316.0" layoutY="251.0" prefHeight="26.0" prefWidth="90.0" />
+      <Button layoutX="430.0" layoutY="250.0" mnemonicParsing="false" onAction="#SearchAndLoadButtonOnClick" prefHeight="26.0" prefWidth="134.0" text="“Search &amp; Load Table”" />
+      <TableView fx:id="fxid_tableview" layoutX="20.0" layoutY="291.0" prefHeight="200.0" prefWidth="564.0">
+        <columns>
+          <TableColumn fx:id="fxid_tableviewColCardNo" prefWidth="139.20001220703125" text="Card No" />
+          <TableColumn fx:id="fxid_tableviewColHolderName" prefWidth="122.4000244140625" text="holder Name" />
+            <TableColumn fx:id="fxid_tableviewColGatewayName" prefWidth="131.20001220703125" text="Gateway Name" />
+            <TableColumn fx:id="fxid_tableviewColCreditLimit" prefWidth="170.4000244140625" text="Credit Limit" />
+        </columns>
+      </TableView>
+      <Button layoutX="20.0" layoutY="509.0" mnemonicParsing="false" onAction="#showAverageCreditLimitButtonOnClick" prefHeight="26.0" prefWidth="290.0" text="Show Average Credit Limit from Loaded TableView" />
+      <Label fx:id="fxid_labelAverageCreditLimit" layoutX="368.0" layoutY="513.0" prefHeight="18.0" prefWidth="215.0" style="-fx-background-color: yellow;" text="Average Credit Limit: " />
+   </children>
+</AnchorPane>
