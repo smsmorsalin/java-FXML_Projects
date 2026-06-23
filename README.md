@@ -30,16 +30,6 @@ The goal of this repository is to:
 - IntelliJ IDEA / NetBeans
 - Maven
 
----
-
-## 📂 Projects Included
-
-| Project | Description |
-|----------|-------------|
-| Calculator | A simple calculator application |
-| Advertisement Management System | A JavaFX desktop application designed to manage advertisements |
-
-> More projects will be added regularly as I continue learning and exploring Java development.
 
 
 ---
@@ -53,6 +43,3 @@ The goal of this repository is to:
 - IntelliJ IDEA / NetBeans
 - Scene Builder (for FXML projects)
 
-### Clone the Repository
-```bash
-git clone https://github.com/smsmorsalin/java.git
